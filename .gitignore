@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# IDE / OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# 密钥：.env 及所有本地副本一律不提交
+.env
+.env.*
+!.env.example
+
+# 运行时生成物
+*.log
+logs/
+.pytest_cache/
+cs/data/handoffs.jsonl
+
+# 本地向量模型缓存（约 90MB，首次运行自动下载）
+.model_cache/
+
+# 评估产物（由脚本复现，不必入库）
+cs/eval/distractors.json
+cs/eval/reports/
+
+# 演示数据库作为样例保留，便于 clone 后直接运行
+*.db
+!cs/data/cs.db

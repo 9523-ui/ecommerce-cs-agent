@@ -1,0 +1,22 @@
+# 电商客服 Agent 依赖（Python 3.11+，本项目在 3.14.4 验证通过）
+# 安装：pip install -r requirements.txt
+
+# LLM 调用与配置
+openai==3.42.1
+python-dotenv==1.2.4
+pydantic==2.14.2
+httpx==0.28.1
+
+# Web 工作台
+fastapi==0.162.0
+uvicorn[standard]==0.54.0
+
+# 检索：TF-IDF / Embedding(ONNX) / Hybrid(RRF)
+jieba==0.42.1
+numpy==2.5.4
+scikit-learn==1.9.1
+fastembed==0.9.1
+onnxruntime==1.31.1
+
+# 评估与测试
+pytest==9.2.0
